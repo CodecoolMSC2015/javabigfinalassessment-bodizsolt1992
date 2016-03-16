@@ -1,27 +1,27 @@
 package data;
 
 public class Employee extends Person {
-	int salary;
-	String jobTitle;
+	protected int salary;
+	protected String jobTitle;
 
 	public Employee(int salary, String jobTitle) {
 		this.salary = salary;
 		this.jobTitle = jobTitle;
 	}
 
-	public int getSalary() {
+	protected int getSalary() {
 		return salary;
 	}
 
-	public void setSalary(int salary) {
+	protected void setSalary(int salary) {
 		this.salary = salary;
 	}
 
-	public String getJobTitle() {
+	protected String getJobTitle() {
 		return jobTitle;
 	}
 
-	public void setJobTitle(String jobTitle) {
+	protected void setJobTitle(String jobTitle) {
 		this.jobTitle = jobTitle;
 	}
 

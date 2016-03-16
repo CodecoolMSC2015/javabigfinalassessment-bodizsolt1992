@@ -3,9 +3,9 @@ package data;
 import java.util.List;
 
 public class Person {
-	String name;
-	String email;
-	List<Skill> skillset;
+	private String name;
+	private String email;
+	private List<Skill> skillset;
 
 	public Person() {
 
@@ -16,31 +16,31 @@ public class Person {
 		this.email = email;
 	}
 
-	public String getName() {
+	protected String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	protected void setName(String name) {
 		this.name = name;
 	}
 
-	public String getEmail() {
+	protected String getEmail() {
 		return email;
 	}
 
-	public void setEmail(String email) {
+	protected void setEmail(String email) {
 		this.email = email;
 	}
 
-	public List<Skill> getSkillset() {
+	protected List<Skill> getSkillset() {
 		return skillset;
 	}
 
-	public void setSkillset(List<Skill> skillset) {
+	protected void setSkillset(List<Skill> skillset) {
 		this.skillset = skillset;
 	}
 
-	public void addSkill(Skill skill) {
+	protected void addSkill(Skill skill) {
 		skillset.add(skill);
 
 	}
